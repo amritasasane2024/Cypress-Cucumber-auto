@@ -1,0 +1,38 @@
+{
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/bdd-cucumber/*/*.js",
+    "filterSpecs": true,
+    "omitFiltered": true,
+    "json": {
+      "enabled": true,
+      "formatter": "cucumber-json-formatter",
+      "output": "cypress/reports/json/cucumber-report.json"
+    }
+  },
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "main": "index.js",
+  "ng-recaptcha": "^7.0.1",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "CypressUI": "npx cypress open",
+    "CypressCLI": "npx cypress run --browser chrome --env"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.5",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "save-dev": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "cypress": "^13.13.2",
+    "cypress-file-upload": "^5.0.8",
+    "mocha": "^10.2.0",
+    "multiple-cucumber-html-reporter": "^3.4.0"
+  },
+  "description": ""
+}
